@@ -1,0 +1,78 @@
+[
+  {
+    "filePath": "D:\\Boppo\\jest-demo\\src\\App.js",
+    "messages": [
+      {
+        "ruleId": "no-unused-vars",
+        "severity": 2,
+        "message": "'abc' is defined but never used.",
+        "line": 10,
+        "column": 7,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 10,
+        "endColumn": 10
+      }
+    ],
+    "errorCount": 1,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "import React, { useState, useRef } from 'react';\nimport Button from './component/button/component';\nimport './App.css';\n\nfunction App() {\n  const num1Ref = useRef(0);\n  const num2Ref = useRef();\n  const [sum, setSum] = useState(0);\n  const buttonText = 'Add';\n  let abc;\n  const hendler = () => {\n    const num1 = parseInt(num1Ref.current.value);\n    const num2 = parseInt(num2Ref.current.value);\n    setSum(num1 + num2);\n  };\n\n  return (\n    <div className=\"App\">\n      <input type=\"number\" ref={num1Ref} />\n      <input type=\"number\" ref={num2Ref} />\n      <Button onclick={hendler} label={buttonText} />\n      <h3>Sum is: {sum}</h3>\n    </div>\n  );\n}\n\nexport default App;\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "D:\\Boppo\\jest-demo\\src\\App.test.js",
+    "messages": [],
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "D:\\Boppo\\jest-demo\\src\\component\\button\\button.test.js",
+    "messages": [],
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "D:\\Boppo\\jest-demo\\src\\component\\button\\component.js",
+    "messages": [],
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "D:\\Boppo\\jest-demo\\src\\index.js",
+    "messages": [],
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "D:\\Boppo\\jest-demo\\src\\serviceWorker.js",
+    "messages": [],
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "D:\\Boppo\\jest-demo\\src\\setupTests.js",
+    "messages": [],
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": []
+  }
+]

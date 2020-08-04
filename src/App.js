@@ -7,7 +7,7 @@ function App() {
   const num2Ref = useRef();
   const [sum, setSum] = useState(0);
   const buttonText = 'Add';
-
+  let abc;
   const hendler = () => {
     const num1 = parseInt(num1Ref.current.value);
     const num2 = parseInt(num2Ref.current.value);
