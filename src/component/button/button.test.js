@@ -12,5 +12,4 @@ test('should test button label', () => {
   const wrapper = shallow(<Button label={labelText} />);
   console.log(wrapper, wrapper.text());
   expect(wrapper.text()).toEqual('add');
-  console.log(wrapper, wrapper.text());
 });

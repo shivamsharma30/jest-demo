@@ -8,6 +8,7 @@ function App() {
   const [sum, setSum] = useState(0);
   const buttonText = 'Add';
   let abc;
+
   const hendler = () => {
     const num1 = parseInt(num1Ref.current.value);
     const num2 = parseInt(num2Ref.current.value);
@@ -18,7 +19,12 @@ function App() {
     <div className="App">
       <input type="number" ref={num1Ref} />
       <input type="number" ref={num2Ref} />
-      <Button onclick={hendler} label={buttonText} />
+      <Button
+        onclick={(e) => {
+          hendler(e);
+        }}
+        label={buttonText}
+      />
       <h3>Sum is: {sum}</h3>
     </div>
   );
