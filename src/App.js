@@ -9,12 +9,20 @@ function App() {
   const buttonText = 'Add';
   let abc;
 
+  const userCount = () => {
+    let count = 0;
+    for (let i = 0; true; i++) {
+      count++;
+    }
+    return count;
+  };
+
   const hendler = () => {
     const num1 = parseInt(num1Ref.current.value);
     const num2 = parseInt(num2Ref.current.value);
     setSum(num1 + num2);
   };
-
+  userCount();
   return (
     <div className="App">
       <input type="number" ref={num1Ref} />
